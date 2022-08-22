@@ -1,0 +1,79 @@
+/*The main part of the page*/
+body, html{
+   height:100%;
+   margin:0px;
+   font-size:20px;
+   font-family:"lato", sans-serif;
+   font-weight:400px;
+   line-height:1.5em;
+}
+
+/*Making the image backgrounds*/
+.pimg1, .pimg2, .pimg3{
+   position:relative;
+   opacity:0.90;
+   background-position:center;
+   background-size:cover;
+   background-repeat:no-repeat;
+   background-attachment:fixed;
+}
+/*Image 1*/
+.pimg1{
+   background-image:url(images/dog.jpg);
+   min-height:100%;
+}
+
+/*Image 2*/
+.pimg2{
+   background-image:url(images/dog2.jpg);
+   min-height:500px;
+}
+
+/*Image 3*/
+.pimg3{
+   background-image:url(images/dog3.jpg);
+   min-height:600px;
+}
+
+/*All the sections padding and centering in one*/
+.section{
+   text-align:center;
+   padding:25px 50px;
+}
+
+/*First section, light theme*/
+.section-light{
+   background-color:aliceblue;
+   color:black;
+}
+
+/*Second and third section, dark theme*/
+.section-dark{
+   background-color:black;
+   color:white;
+}
+
+/*Image text*/
+.ptext{
+   position:absolute;
+   top:50%;
+   width:100%;
+   text-align:center;
+   color:black;
+   font-size:40px;
+   letter-spacing:8px;
+   text-transform:uppercase;
+}
+
+/*Text and border values*/
+.ptext .border{
+   background-color:transparent;
+   color:aqua;
+   padding:20px;
+}
+
+@media(max-width:568px){
+   .pimg1, .pimg2, .pimg3{
+      background-attachment:scroll;
+   }
+}
